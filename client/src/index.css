@@ -1,0 +1,406 @@
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap"); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: "Montserrat", sans-serif; */
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-size: 14px !important;
+  /* font-family: "DM Sans", sans-serif; */
+  /* font-family: 'Josefin Sans'; */
+  /* font-family: Roboto,Roboto-fallback,Arial; */
+
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: Arial, sans-serif;
+}
+
+/* custom page scroll */
+
+body::-webkit-scrollbar {
+  width: 9px;
+  background-color: transparent;
+}
+
+/* Create a custom scrollbar track */
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Create a custom scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* Style the scrollbar thumb on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  width: 14px;
+}
+
+
+.page-container-cov {
+  scrollbar-width: thin; /* "thin" or "auto" */
+  scrollbar-color: transparent transparent; /* track-color thumb-color */
+}
+
+.page-container-cov::-webkit-scrollbar {
+  width: 2px; /* width of the scrollbar */
+}
+
+.page-container-cov::-webkit-scrollbar-track {
+  background-color: transparent; /* color of the track */
+}
+
+.page-container-cov::-webkit-scrollbar-thumb {
+  background-color: transparent; /* color of the thumb */
+}
+
+
+
+/* custom bar-scroll */
+
+
+
+
+.page-container::-webkit-scrollbar {
+  width: 9px;
+  background-color: transparent;
+}
+
+/* Create a custom scrollbar track */
+.page-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Create a custom scrollbar thumb */
+.page-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* Style the scrollbar thumb on hover */
+.page-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  width: 14px;
+}
+
+.page-container{
+  transition: all .4s ease-in;
+}
+
+.h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-parent{
+  position: relative;
+}
+
+.btn{
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  border-radius: 30px;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  transition: all .2s ease;
+}
+
+.avtiv-nav{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  background: white;
+  transition: all .4s ease;
+
+}
+
+.react-multi-carousel-list {
+  width: 85% !important;
+  margin: 0 auto;
+}
+.carousel-container {
+  scroll-behavior: smooth;
+
+}
+
+
+.flish{
+  position: absolute;
+  transform: rotate(44deg);
+  top: 0;
+  left:-6px;
+  width: 20px;
+  height: 20px;
+  border-top:8px solid transparent;
+  border-left:8px solid white;
+  border-right:8px solid transparent;
+  border-bottom: 8px solid white;
+
+}
+
+.flish2{
+  position: absolute;
+  transform: rotate(-44deg);
+  top: -4px;
+  right:22px;
+  width: 20px;
+  height: 20px;
+  border-top:8px solid white;
+  border-left:8px solid transparent;
+  border-right:8px solid white;
+  border-bottom: 8px solid transparent;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+ @apply bg-gray-50
+}
+
+.slider {
+  margin:0 5px;
+  overflow:"hidden";
+}
+
+.slider.img {
+  width: 100%;
+  border-radius:5px;
+}
+
+.react-multi-carousel-list {
+padding: 0rem 0 2rem 0;
+}
+
+.btn-parent:hover .btn{
+   width: 100%;
+}
+/* tailwind css */
+
+
+
+.parent-item-sidebar .to-green-200{
+  transition: all .4s ease;
+}
+.parent-item-sidebar:hover .to-green-200{
+  width: 100%;
+}
+
+.react-multiple-carousel__arrow{
+ @apply bg-green-900 min-h-[33px] min-w-[33px] text-sm rounded-full z-0
+}
+.react-multiple-carousel__arrow:hover{
+  @apply bg-gray-700
+}
+
+
+.MTwoCol{
+  @apply space-y-8 md:space-y-0 flex-col md:flex-row
+}
+
+.h2 {
+  @apply text-lg font-[600];
+}
+.h3 {
+  @apply text-lg font-[500];
+}
+  .h1{
+  @apply font-[600] text-2xl ;
+} 
+
+ .h3{
+  @apply text-sm ;
+} 
+ .p{
+  @apply opacity-70 text-sm;
+}
+
+.b{
+  @apply font-[600] text-lg;
+}
+
+.flex-j-c-i-c-w-f{
+  @apply flex justify-start items-start w-full;
+}
+.flex-j-c-w-f{
+  @apply flex justify-start w-full;
+}
+.flex-i-c-w-f{
+  @apply flex items-start w-full;
+}
+.rounded-md-b-gray{
+  @apply rounded-md border border-gray-300;
+} 
+
+
+
+/* stripe payement */
+
+#root {
+  display: flex;
+  align-items: center;
+}
+
+/* body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+} */
+
+.form-payement {
+  width: 30vw;
+  margin: 0 auto;
+  min-width: 500px;
+  align-self: center;
+  box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+    0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 40px;
+}
+
+
+#payment-message {
+  color: rgb(105, 115, 134);
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#payment-element {
+  margin-bottom: 24px;
+}
+
+/* Buttons and links */
+.button-payement {
+  background: #5469d4;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+.button-payement:hover {
+  filter: contrast(115%);
+}
+
+.button-payement:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* spinner/processing state, errors */
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.spinner:before,
+.spinner:after {
+  position: absolute;
+  content: '';
+}
+
+.spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-payement {
+    width: 80vw;
+    min-width: initial;
+  }
+}
+
+.EmojiPickerReact {
+  height: 275px !important;
+    width: 267px !important;
+}
+.epr-category-nav{
+  display: none !important;
+}
+.Flex.epr-preview.FlexRow{
+  height: 44px !important;
+}
+.epr-header{
+  height: 56px;
+}
+
